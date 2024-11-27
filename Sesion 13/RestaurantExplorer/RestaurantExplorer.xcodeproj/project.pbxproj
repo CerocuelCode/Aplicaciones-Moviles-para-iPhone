@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBE1FC8E2CF79A6D0023BB83 /* RestaurantExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FC8D2CF79A6D0023BB83 /* RestaurantExplorerApp.swift */; };
+		FBE1FC902CF79A6D0023BB83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FC8F2CF79A6D0023BB83 /* ContentView.swift */; };
+		FBE1FC922CF79A6E0023BB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE1FC912CF79A6E0023BB83 /* Assets.xcassets */; };
+		FBE1FC952CF79A6E0023BB83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE1FC942CF79A6E0023BB83 /* Preview Assets.xcassets */; };
+		FBE1FCA12CF79B7C0023BB83 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCA02CF79B7C0023BB83 /* HttpRequestHelper.swift */; };
+		FBE1FCA32CF79BFB0023BB83 /* RestaurantResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCA22CF79BFB0023BB83 /* RestaurantResponse.swift */; };
+		FBE1FCA62CF79CA70023BB83 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCA52CF79CA70023BB83 /* Restaurant.swift */; };
+		FBE1FCA82CF79D4D0023BB83 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCA72CF79D4D0023BB83 /* RestaurantService.swift */; };
+		FBE1FCAA2CF7A0F40023BB83 /* RestaurantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCA92CF7A0F40023BB83 /* RestaurantsListView.swift */; };
+		FBE1FCAC2CF7A1200023BB83 /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCAB2CF7A1200023BB83 /* RestaurantListViewModel.swift */; };
+		FBE1FCAE2CF7A5FC0023BB83 /* RestauranListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCAD2CF7A5FC0023BB83 /* RestauranListItem.swift */; };
+		FBE1FCB02CF7ABCF0023BB83 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCAF2CF7ABCF0023BB83 /* RestaurantDetailView.swift */; };
+		FBE1FCB32CF7AEEC0023BB83 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = FBE1FCB22CF7AEEC0023BB83 /* GoogleMaps */; };
+		FBE1FCB52CF7AF110023BB83 /* GoogleMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCB42CF7AF110023BB83 /* GoogleMapManager.swift */; };
+		FBE1FCB72CF7AF8E0023BB83 /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE1FCB62CF7AF8E0023BB83 /* GoogleMapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBE1FC8A2CF79A6D0023BB83 /* RestaurantExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE1FC8D2CF79A6D0023BB83 /* RestaurantExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantExplorerApp.swift; sourceTree = "<group>"; };
+		FBE1FC8F2CF79A6D0023BB83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBE1FC912CF79A6E0023BB83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBE1FC942CF79A6E0023BB83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBE1FCA02CF79B7C0023BB83 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		FBE1FCA22CF79BFB0023BB83 /* RestaurantResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResponse.swift; sourceTree = "<group>"; };
+		FBE1FCA52CF79CA70023BB83 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		FBE1FCA72CF79D4D0023BB83 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		FBE1FCA92CF7A0F40023BB83 /* RestaurantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListView.swift; sourceTree = "<group>"; };
+		FBE1FCAB2CF7A1200023BB83 /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+		FBE1FCAD2CF7A5FC0023BB83 /* RestauranListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranListItem.swift; sourceTree = "<group>"; };
+		FBE1FCAF2CF7ABCF0023BB83 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		FBE1FCB42CF7AF110023BB83 /* GoogleMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapManager.swift; sourceTree = "<group>"; };
+		FBE1FCB62CF7AF8E0023BB83 /* GoogleMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBE1FC872CF79A6D0023BB83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE1FCB32CF7AEEC0023BB83 /* GoogleMaps in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBE1FC812CF79A6D0023BB83 = {
+			isa = PBXGroup;
+			children = (
+				FBE1FC8C2CF79A6D0023BB83 /* RestaurantExplorer */,
+				FBE1FC8B2CF79A6D0023BB83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBE1FC8B2CF79A6D0023BB83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FC8A2CF79A6D0023BB83 /* RestaurantExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE1FC8C2CF79A6D0023BB83 /* RestaurantExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCA42CF79C950023BB83 /* Services */,
+				FBE1FC9F2CF79AC10023BB83 /* Configurations */,
+				FBE1FC9E2CF79AB40023BB83 /* Helpers */,
+				FBE1FC9D2CF79AAC0023BB83 /* Models */,
+				FBE1FC9C2CF79AA20023BB83 /* ViewModels */,
+				FBE1FC9B2CF79A920023BB83 /* Views */,
+				FBE1FC8D2CF79A6D0023BB83 /* RestaurantExplorerApp.swift */,
+				FBE1FC8F2CF79A6D0023BB83 /* ContentView.swift */,
+				FBE1FC912CF79A6E0023BB83 /* Assets.xcassets */,
+				FBE1FC932CF79A6E0023BB83 /* Preview Content */,
+			);
+			path = RestaurantExplorer;
+			sourceTree = "<group>";
+		};
+		FBE1FC932CF79A6E0023BB83 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FC942CF79A6E0023BB83 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBE1FC9B2CF79A920023BB83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCB62CF7AF8E0023BB83 /* GoogleMapView.swift */,
+				FBE1FCA92CF7A0F40023BB83 /* RestaurantsListView.swift */,
+				FBE1FCAD2CF7A5FC0023BB83 /* RestauranListItem.swift */,
+				FBE1FCAF2CF7ABCF0023BB83 /* RestaurantDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBE1FC9C2CF79AA20023BB83 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCAB2CF7A1200023BB83 /* RestaurantListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FBE1FC9D2CF79AAC0023BB83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCA52CF79CA70023BB83 /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBE1FC9E2CF79AB40023BB83 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCA02CF79B7C0023BB83 /* HttpRequestHelper.swift */,
+				FBE1FCB42CF7AF110023BB83 /* GoogleMapManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FBE1FC9F2CF79AC10023BB83 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		FBE1FCA42CF79C950023BB83 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1FCA22CF79BFB0023BB83 /* RestaurantResponse.swift */,
+				FBE1FCA72CF79D4D0023BB83 /* RestaurantService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBE1FC892CF79A6D0023BB83 /* RestaurantExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE1FC982CF79A6E0023BB83 /* Build configuration list for PBXNativeTarget "RestaurantExplorer" */;
+			buildPhases = (
+				FBE1FC862CF79A6D0023BB83 /* Sources */,
+				FBE1FC872CF79A6D0023BB83 /* Frameworks */,
+				FBE1FC882CF79A6D0023BB83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestaurantExplorer;
+			packageProductDependencies = (
+				FBE1FCB22CF7AEEC0023BB83 /* GoogleMaps */,
+			);
+			productName = RestaurantExplorer;
+			productReference = FBE1FC8A2CF79A6D0023BB83 /* RestaurantExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBE1FC822CF79A6D0023BB83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FBE1FC892CF79A6D0023BB83 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = FBE1FC852CF79A6D0023BB83 /* Build configuration list for PBXProject "RestaurantExplorer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBE1FC812CF79A6D0023BB83;
+			packageReferences = (
+				FBE1FCB12CF7AEEC0023BB83 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
+			productRefGroup = FBE1FC8B2CF79A6D0023BB83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBE1FC892CF79A6D0023BB83 /* RestaurantExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBE1FC882CF79A6D0023BB83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE1FC952CF79A6E0023BB83 /* Preview Assets.xcassets in Resources */,
+				FBE1FC922CF79A6E0023BB83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBE1FC862CF79A6D0023BB83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE1FCB72CF7AF8E0023BB83 /* GoogleMapView.swift in Sources */,
+				FBE1FCA62CF79CA70023BB83 /* Restaurant.swift in Sources */,
+				FBE1FCB52CF7AF110023BB83 /* GoogleMapManager.swift in Sources */,
+				FBE1FCAC2CF7A1200023BB83 /* RestaurantListViewModel.swift in Sources */,
+				FBE1FC902CF79A6D0023BB83 /* ContentView.swift in Sources */,
+				FBE1FCA12CF79B7C0023BB83 /* HttpRequestHelper.swift in Sources */,
+				FBE1FC8E2CF79A6D0023BB83 /* RestaurantExplorerApp.swift in Sources */,
+				FBE1FCAE2CF7A5FC0023BB83 /* RestauranListItem.swift in Sources */,
+				FBE1FCB02CF7ABCF0023BB83 /* RestaurantDetailView.swift in Sources */,
+				FBE1FCA82CF79D4D0023BB83 /* RestaurantService.swift in Sources */,
+				FBE1FCA32CF79BFB0023BB83 /* RestaurantResponse.swift in Sources */,
+				FBE1FCAA2CF7A0F40023BB83 /* RestaurantsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBE1FC962CF79A6E0023BB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBE1FC972CF79A6E0023BB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBE1FC992CF79A6E0023BB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RestaurantExplorer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.isil.RestaurantExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBE1FC9A2CF79A6E0023BB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RestaurantExplorer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pe.isil.RestaurantExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBE1FC852CF79A6D0023BB83 /* Build configuration list for PBXProject "RestaurantExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE1FC962CF79A6E0023BB83 /* Debug */,
+				FBE1FC972CF79A6E0023BB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE1FC982CF79A6E0023BB83 /* Build configuration list for PBXNativeTarget "RestaurantExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE1FC992CF79A6E0023BB83 /* Debug */,
+				FBE1FC9A2CF79A6E0023BB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBE1FCB12CF7AEEC0023BB83 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBE1FCB22CF7AEEC0023BB83 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE1FCB12CF7AEEC0023BB83 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FBE1FC822CF79A6D0023BB83 /* Project object */;
+}
